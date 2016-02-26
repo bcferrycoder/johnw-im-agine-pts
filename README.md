@@ -2,18 +2,27 @@
 
 ## Introduction
 
-This is the API layer of Amal's (Amal.Chaudhuri@bnymellon.com) Imagine Position Tracking System, packaged as a single Dockerfile.
+nThis is the API layer of Amal's (Amal.Chaudhuri@bnymellon.com) Imagine Position Tracking System, packaged as a single Dockerfile. His original Ruby application is on github [here](https://github.com/slightlyoriented/im-agine-pts).
 
 
-#### Notes
 
-Currently on Docker Hub as  https://hub.docker.com/r/johnw/imagini/
+## Installation
 
+
+```
+$ git clone https://github.com/bcferrycoder/johnw-im-agine-pts
+```#### now grab your latest code - make sure it's in the im-agine-pts subdirectory```$ cd johnw-im-agine-pts$ git clone https://github.com/slightlyoriented/im-agine-pts
+```#### build the image   (replace "amal" with your Docker hub username)
 
 ```
-$ cf login –a api.cfaz1.bcferrycoder.com —skip-ssl-validation –u bxp –p inn0vate
-$ cf push –k 2G imagini –docker-image johnw/imagini –c “/scripts/run-postgres-and-rails.sh”
-  ```
+$ docker build -t amal/im-agine-pts .      ```#### and push to Docker hub```$ docker push amal/im-agine-pts
+```
+
+
+
+## Notes
+
+Currently on Docker Hub as  https://hub.docker.com/r/johnw/imagini/
 
 
 ### Misc notes
@@ -21,7 +30,7 @@ $ cf push –k 2G imagini –docker-image johnw/imagini –c “/scripts/run-pos
 If ```df``` on container shows errors, try this:
 
 ```
-# cp /proc/mounts /etc/mtab 
+cp /proc/mounts /etc/mtab 
 ```
 
 ### Questions
