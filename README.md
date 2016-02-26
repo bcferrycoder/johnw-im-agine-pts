@@ -2,7 +2,7 @@
 
 ## Introduction
 
-nThis is the API layer of Amal's (Amal.Chaudhuri@bnymellon.com) Imagine Position Tracking System, packaged as a single Dockerfile. His original Ruby application is on github [here](https://github.com/slightlyoriented/im-agine-pts).
+This is the API layer of Amal's (Amal.Chaudhuri@bnymellon.com) Imagine Position Tracking System, packaged as a single Dockerfile. His original Ruby application is on github [here](https://github.com/slightlyoriented/im-agine-pts).
 
 
 
@@ -11,7 +11,8 @@ nThis is the API layer of Amal's (Amal.Chaudhuri@bnymellon.com) Imagine Position
 
 ```
 $ git clone https://github.com/bcferrycoder/johnw-im-agine-pts
-```#### now grab your latest code - make sure it's in the im-agine-pts subdirectory```$ cd johnw-im-agine-pts$ git clone https://github.com/slightlyoriented/im-agine-pts
+```#### now grab your latest code - make sure it's in the im-agine-pts subdirectory```
+$ cd johnw-im-agine-pts$ git clone https://github.com/slightlyoriented/im-agine-pts
 ```#### build the image   (replace "amal" with your Docker hub username)
 
 ```
