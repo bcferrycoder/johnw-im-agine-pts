@@ -9,7 +9,7 @@ rvm use 2.2.4
 
 /scripts/docker-entrypoint.sh postgres &
 
-sleep 5
+sleep 15
 echo "creating pg role"
 su - postgres -c /scripts/create-pg-role.sh
 cd /im-agine-pts
